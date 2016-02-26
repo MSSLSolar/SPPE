@@ -1,15 +1,14 @@
 language: python
+python:
+  - "3.5"
 
 sudo: false
 
-addons:
-  apt:
-    packages:
-      - python-pytest
 env:
   global:
-    - MAIN_CMD="py.test -v"
+    - MAIN_CMD="py.test -vv"
 
+install: 'pip install pytest'
 script:
   - $MAIN_CMD
 
