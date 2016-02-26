@@ -1,0 +1,15 @@
+language: python
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - python-pytest
+env:
+  global:
+    - MAIN_CMD="py.test -v"
+
+script:
+  - $MAIN_CMD
+
